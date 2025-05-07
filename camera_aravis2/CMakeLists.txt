@@ -71,6 +71,7 @@ set(DEPENDENCIES
   sensor_msgs
   diagnostic_msgs
   camera_aravis2_msgs
+  yaml-cpp
 )
 
 set(LIBRARIES
@@ -81,6 +82,7 @@ set(LIBRARIES
   cv_bridge::cv_bridge
   image_transport::image_transport
   ${YAML_CPP_LIBRARY_DIRS}
+  yaml-cpp
 )
 
 add_library(${LIBRARY_NAME} SHARED
