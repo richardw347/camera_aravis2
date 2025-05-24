@@ -81,6 +81,8 @@ const std::map<std::string, ConversionFunction> CONVERSIONS_DICTIONARY =
     // equivalent to official ROS color encodings
     {"RGB8", std::bind(&renameImg, std::placeholders::_1, std::placeholders::_2,
                        sensor_msgs::image_encodings::RGB8)},
+    {"RGB8Packed", std::bind(&renameImg, std::placeholders::_1, std::placeholders::_2,
+                       sensor_msgs::image_encodings::RGB8)},
     {"RGBa8", std::bind(&renameImg, std::placeholders::_1, std::placeholders::_2,
                         sensor_msgs::image_encodings::RGBA8)},
     {"RGB16", std::bind(&renameImg, std::placeholders::_1, std::placeholders::_2,
